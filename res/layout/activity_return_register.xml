@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_scan_code"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_scan_low_selector"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_scan_sn"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_scan_low_selector"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="扫描资产编号"
+                android:textColor="@color/white"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="扫描序列号"
+                android:textColor="@color/white"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlsn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/bottom"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/namesn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="序列号"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/valuesn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/namesn"
+            android:background="@drawable/keshuru"
+            android:cursorVisible="true"
+            android:gravity="center|left"
+            android:imeOptions="actionSearch"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlcode"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/rlsn"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/namecode"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="资产编号"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/valuecode"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/namecode"
+            android:background="@drawable/keshuru"
+            android:cursorVisible="true"
+            android:gravity="center|left"
+            android:imeOptions="actionSearch"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView01"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_above="@id/rlcode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/table_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/gray_five"
+                android:minHeight="30dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="资产编号"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="资产名称"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="规格型号"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="序列号"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/scroll_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/table_title"
+                android:cacheColorHint="#00000000"
+                android:divider="#dadada"
+                android:dividerHeight="0.5dip"
+                android:drawSelectorOnTop="false"
+                android:fadingEdgeLength="0.0sp"
+                android:fastScrollEnabled="true" >
+            </ListView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlfunction"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@id/HorizontalScrollView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_normal_selector"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_normal_selector"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/searchlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlfunction"
+        android:layout_below="@id/title_bar_normal_mode"
+        android:layout_marginBottom="5dp"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:listSelector="@null"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

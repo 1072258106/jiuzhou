@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetuiActivity" >
+
+    <include
+        android:id="@+id/title_getui"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+    
+    <ListView 
+        android:id="@+id/lv_getui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_getui">
+        
+    </ListView>
+
+</RelativeLayout>

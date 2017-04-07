@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings version = "1">
+   <setting key="brand" runtime="false"></setting>
+   <setting key="facebook" runtime="true">true</setting>
+   <setting key="twitter" runtime="true">true</setting>
+   <setting key="contacts" runtime="false">/sdcard/System/PIM/</setting>
+   <setting key="disable-integrated-app-presence" runtime="true">false</setting>
+   <setting key="contacts-tutorial-url" runtime="false"></setting>
+   <setting key="disabled-voicemail" runtime="false">false</setting>
+   <setting key="enable-speed-dial" runtime="false">false</setting>
+</settings>

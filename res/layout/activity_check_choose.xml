@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/check_lei"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/title_bar_normal_mode"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_check_lei"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="盘点类别"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_chech_lei"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/tv_check_lei"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/code"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/check_lei"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvcode"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="批次编号"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_choose"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvcode"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/show"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/code"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvshow"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="批次说明"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvshow"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/show"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvstate"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="批次状态"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvstate"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/state"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="盘点开始时间"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvtime"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/time"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvauthor"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="授权码"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvauthor"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_left_checkChoose_onlone"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="下载"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/btn_right_checkChoose_onlone"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="明细"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/btn_single_checkChoose_onlone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="下载"
+        android:textColor="@color/white"
+        android:textSize="18.0sp"
+        />
+
+    <ListView
+        android:id="@+id/lv_getui_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_single_checkChoose_onlone"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/author"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

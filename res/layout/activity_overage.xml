@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="扫码"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/reason_ll_overage"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_below="@+id/title_bar_normal_mode" >
+
+        <TextView
+            android:id="@+id/reason_name"
+            android:layout_width="150.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/skyblue"
+            android:gravity="center|left"
+            android:text="盘盈原因"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/reason_overage_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_toRightOf="@+id/reason_name"
+            android:background="@drawable/keshuru"
+            android:cursorVisible="true"
+            android:gravity="center|left"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:text=""
+            android:textColor="#ff464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/overage_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_above="@+id/ok_btn"
+        android:layout_below="@+id/reason_ll_overage" />
+
+</RelativeLayout>

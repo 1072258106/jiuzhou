@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mid" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title_bar_normal_mode"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/keshuru"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="#464d4c"
+        android:textSize="22.0sp" />
+
+    <ListView
+        android:id="@+id/chooselist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/value"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

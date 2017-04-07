@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="第3页/共10页"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="80dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_normal_selector"
+            android:gravity="center"
+            android:text="下一页"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="80dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/btn_next"
+            android:background="@drawable/btn_normal_selector"
+            android:gravity="center"
+            android:text="上一页"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title_bar_normal_mode" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/table_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/gray_five"
+                android:minHeight="30dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="资产编号"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="资产名称"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="规格型号"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="序列号"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:text="操作"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/scroll_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/table_title"
+                android:cacheColorHint="#00000000"
+                android:divider="#dadada"
+                android:dividerHeight="0.5dip"
+                android:drawSelectorOnTop="false"
+                android:fadingEdgeLength="0.0sp"
+                android:fastScrollEnabled="true" >
+            </ListView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

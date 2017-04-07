@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_third" >
+
+    <TextView
+        android:id="@+id/tv_getui_zzbh"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="资产编号"
+        android:textColor="@color/Black"
+        android:textSize="16.0sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_getui_zzlb"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/tv_getui_zzbh"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="资产类别"
+        android:textColor="@color/Black"
+        android:textSize="16.0sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_getui_zzflag"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/tv_getui_zzlb"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="资产"
+        android:textColor="@color/Black"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/tv_getui_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/tv_getui_zzflag"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:text="资产信息"
+        android:textColor="@color/Black"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_contactname_editorfield_text_color">#000000</color>
+    <!-- same as dialpad_input_background_color -->
+    <color name="smart_search_transparent_color">#00000000</color>
+    <color name="transbg">#00FFFFFF</color>
+    <color name="smart_search_highlight_background_color">#ff009fcd</color>
+    <color name="header_spinner_text_color">#FFFFFF</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff0061a9</color>
+    <color name="gray">#ff4a4a4a</color>
+    <color name="click_blue">#40b0fc</color>
+    <color name="red">#ffff0000</color>
+    <color name="gray_third">#ff898989</color>
+
+    <!-- recent call listitem -->
+    <color name="contact_item__additional_info_color">#ffb2b2b2</color>
+    <color name="theme_accent_color">#ffffffff</color>
+    <color name="text_color_msg_time">#ff4d657c</color>
+    <color name="Black">#000000</color>
+    <color name="cloud_text">#ff215783</color>
+    <color name="themeblue">#ff0d2a4d</color>
+    <color name="tabbutton_notselect">#ff3f5c84</color>
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <color name="line_vertical">#CCCCCC</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="dark_blue">#ff263543</color>
+    <color name="light_blue_cancel">#ffc1dbf4</color>
+    <color name="btn_tv_normal">#ff666666</color>
+    <color name="btn_tv_press">#ffffffff</color>
+    <color name="popup_view_background_color">#ffc5cbd0</color>
+    <color name="orange">#fff29428</color>
+    <color name="tongxingzheng_gray">#ffb8bbc2</color>
+    <color name="deep_black">#ff4a4d51</color>
+    <color name="warm_color">#ffeeece8</color>
+    <color name="line">#dddddd</color>
+    <color name="kermesinus">#ffca3125</color>
+    <color name="btn_green">#ff2c9534</color>
+
+    <color name="gray_line_top">#ffaaaaaa</color>
+    <color name="gray_line_bottom">#ffffffff</color>
+    <color name="iphone_gray_line">#ffc4c4c4</color>
+    <color name="iphone_dark_blue">#ff070b68</color>
+
+    <color name="blue_line_top">#ff3f7188</color>
+    <color name="blue_line_bottom">#ff6e96aa</color>
+    <color name="authentication_status_color">#ffbf5451</color>
+    <color name="light_blue_line_top">#ff318fba</color>
+    <color name="light_blue_line_bottom">#ff56b6e0</color>
+    <color name="pup_window_bg">#ffd5d3cf</color>
+    <color name="secondry_num_detail">#fff1f2f4</color>
+    <color name="authentication">#ffdddbd7</color>
+    <color name="combo_bg">#fff0f2f4</color>
+    <color name="help_green">#ff189200</color>
+    <color name="help_green_pressed">#ff116600</color>
+    <color name="gray_divider">#ffcecece</color>
+    <color name="tv_desc">#666666</color>
+    <color name="sb_dialog_back">#eeeeee</color>
+    <color name="backup_bottom">#f4f4f4</color>
+    <color name="backup_desc_text">#999999</color>
+    <color name="backup_time">#333333</color>
+    <color name="backup_count">#989898</color>
+    <color name="yaoyiyao_background">#eeeeeeee</color>
+    <color name="listdivler">#cecece</color>
+    <color name="viewback">#FFEFEFEF</color>
+    <color name="gray_five">#dddddd</color>
+    <color name="group_list_back">#FEFFFF</color>
+    <color name="group_opreate_pop_back">#575757</color>
+    <color name="group_list_driver">#dddddd</color>
+    <color name="frag_title_back">#40b0fc</color>
+    <color name="login_button_normal">#169fff</color>
+    <color name="login_button_pressed">#1073b9</color>
+    <color name="common_blue">#169fff</color>
+    <color name="manager_delete">#B52020</color>
+    <color name="gray_text">#D0D0D0</color>
+    <color name="chat_input">#eeeeee</color>
+    <color name="chat_sound">#eeeeee</color>
+    <color name="chat_sound_length">#989898</color>
+    <color name="group_item_pressed">#dddddd</color>
+    <color name="point_normal">#999999</color>
+    <color name="point_select">#169fff</color>
+    <color name="frag_bg">#f0eff5</color>
+    <color name="twice_text_view_selected">#969696</color>
+    <color name="twice_text_view_unselected">#f9f9f9</color>
+    <color name="edit_tv">#FFB8B8B8</color>
+    <color name="event_time">#a3a3a3</color>
+    <color name="event_content">#9d9d9d</color>
+    <color name="cloud_mask">#ccffffff</color>
+    <color name="event_adapter_bg">#f9f9f9</color>
+    <color name="event_custom_bg">#bdbdbd</color>
+
+    <!--New UI-->
+    <color name="module_item_content_color">#9a9a9a</color>
+    <color name="event_edit_hint">#c8c8ca</color>
+    <color name="share_selected">#e2e2e2</color>
+    <color name="pop_bg">#44000000</color>
+    <color name="pop_content_bg">#E9E9E9</color>
+    <color name="fragment_title_bg">#40b0fc</color>
+    <color name="event_active_apply_bg">#c6de56</color>
+    <color name="event_active_unapply_bg">#ffaa36</color>
+
+    <color name="event_list_line">#E4E4E4</color>
+    <color name="event_list_reply">#7d8cad</color>
+    <color name="event_list_content">#9a9a9a</color>
+    <color name="event_list_title">#ff000000</color>
+    <color name="event_send_notice">#ff943d</color>
+    <color name="event_send_activity">#78c06d</color>
+    <color name="event_send_normal">#5e97f6</color>
+
+    <color name="cloud_contact_detail_dark">#4e4e4e</color>
+    <color name="cloud_contact_detail_light">#6a6a6a</color>
+    <color name="cloud_contact_detail_blue">#40b1ff</color>
+    <color name="custom_more_text">#6a6a6a</color>
+
+    <color name="edit_text">#0a1322</color>
+    <color name="edit_hint">#c7c6cc</color>
+    
+
+  <color name="viewfinder_frame">#ff4EEE94</color><!-- #ff0000ff -->
+  <color name="backgroud">#ffffffff</color>
+  <color name="title_tv_color">#ffffffff</color>
+  <color name="unabled_color">#dfdfdf</color>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">资产盘点系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="msg_default_status">请将条码置于取景框内扫描</string>
+    <string name="title_activity_overage">OverageActivity</string>
+
+</resources>

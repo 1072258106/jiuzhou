@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/lin_autograph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_normal_mode"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_search_write"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_normal_selector"
+            android:gravity="center"
+            android:text="手写"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_search_pai"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_normal_selector"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_autograph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lin_autograph"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btn_search_save"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/iv_autograph"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

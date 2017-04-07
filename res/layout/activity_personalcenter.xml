@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar_normal_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:layout_gravity="center_vertical"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/show"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/title_bar_normal_mode"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvshow"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="用户名"
+            android:background="@color/skyblue"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvshow"
+            android:background="@drawable/bukeshuru"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/show"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvstate"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@color/skyblue"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="职位"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvstate"
+            android:background="@drawable/bukeshuru"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/state"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@color/skyblue"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="部门"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvtime"
+            android:background="@drawable/bukeshuru"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/time"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_five" >
+
+        <TextView
+            android:id="@+id/tvauthor"
+             android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:background="@color/skyblue"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="系统版本"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tvauthor"
+            android:background="@drawable/bukeshuru"
+            android:gravity="center|left"
+            android:textColor="#464d4c"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_search_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/author"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="检查更新"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/btn_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_search_update"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="修改密码"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/btn_change_signature"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_change_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_normal_selector"
+        android:gravity="center"
+        android:text="电子签名"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

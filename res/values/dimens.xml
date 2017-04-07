@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="quickcontact_shadow_horiz">30.0dip</dimen>
+    <dimen name="edit_photo_size">100.0dip</dimen>
+    <dimen name="tab_height">40.0dip</dimen>
+    <dimen name="list_item_vertical_divider_margin">5.0dip</dimen>
+    <dimen name="contact_textview_textsize">15.0sp</dimen>
+    <dimen name="contact_textview_textsizeSetting">16.0sp</dimen>
+    <dimen name="popupwindow_menu_textview">15.0sp</dimen>
+    <dimen name="popupwindow_contactcontrol_textview">15.0sp</dimen>
+
+    <!-- action bar -->
+    <dimen name="list_first_char_hint_text_size">15sp</dimen>
+    <dimen name="list_item_order_number_size">30sp</dimen>
+    <dimen name="qa_action_item_padding">15dip</dimen>
+    <dimen name="qa_action_item_name_size">15sp</dimen>
+    <!-- action bar -->
+
+    <dimen name="balloon_text_plus">20dip</dimen>
+    <dimen name="dialog_left_margin">10dp</dimen>
+    <dimen name="dialog_top_margin">30dp</dimen>
+    <dimen name="dialog_right_margin">10dp</dimen>
+    <dimen name="dialog_bottom_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_right_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_top_margin">10dp</dimen>
+    <dimen name="dialog_title_logo_left_margin">5dp</dimen>
+    <dimen name="dialog_title_height">30dp</dimen>
+    <dimen name="h_keyboard_height">200dp</dimen>
+    <dimen name="text_view_label">17sp</dimen>
+    <dimen name="text_view_summary">12sp</dimen>
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="textsize_big">18sp</dimen>
+	
+    <dimen name="title_bar_h">50dip</dimen>
+    
+    <dimen name="list_title_min">200dp</dimen>
+    <dimen name="list_title_max">280dp</dimen>
+    
+    <dimen name="container_mingpian_height">360dp</dimen>
+    <dimen name="gif_height">24dp</dimen>
+    <dimen name="gif_width">200dp</dimen>
+    <dimen name="dimension_code_h_w">200dp</dimen>
+    <dimen name="qr_code_container_h">300dp</dimen>
+    <dimen name="gif_margin_top">-10dp</dimen>
+    <dimen name="title_margin_top">-23dp</dimen>
+
+    <dimen name="function_point">8dp</dimen>
+    <dimen name="name_card_text">12dp</dimen>
+
+    <dimen name="tongxingzheng_margin">20dp</dimen>
+    <dimen name="edit_text_margin">14dp</dimen>
+
+    
+    <dimen name="list_text_size">18dp</dimen>
+    <dimen name="list_input_text_size">16dp</dimen>
+    <dimen name="line_height">0.6dp</dimen>
+    <dimen name="edit_ll_h">47dp</dimen>
+    <dimen name="edit_ll_he">50dp</dimen>
+    <dimen name="edit_ed_h">40dp</dimen>
+    <dimen name="edit_margin_left">15dp</dimen>
+    <dimen name="contact_head">40dp</dimen>
+    <dimen name="even_pop_h">50dp</dimen>
+    <dimen name="even_image_h">54dp</dimen>
+    <dimen name="even_custom_right">15dp</dimen>
+    <dimen name="even_ll_h">45dp</dimen>
+
+    <!--New UI -->
+    <dimen name="module_title">17dp</dimen>
+    <dimen name="module_item_title">17dp</dimen>
+    <dimen name="module_detail_content">15dp</dimen>
+    <dimen name="module_item_content">14dp</dimen>
+    <dimen name="module_item_name">14dp</dimen>
+    <dimen name="module_item_time">12dp</dimen>
+    <dimen name="event_custom_text">16dp</dimen>
+    <dimen name="event_custom_edit">14dp</dimen>
+    <dimen name="edit_cloud_text">15dp</dimen>
+    <dimen name="edit_cloud_note">14dp</dimen>
+    <dimen name="custom_more_view">16dp</dimen>
+    
+    <dimen name="detail_name_text">16dp</dimen>
+    <dimen name="detail_phone_text">12dp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

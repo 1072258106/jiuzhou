@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="drawable" name="bg_white">#ffffffff</item>
+    <item type="drawable" name="list_gray">#cdd2d6</item>
+    <drawable name="rect_item_bg_pressed">#FF1886D0</drawable>
+    <drawable name="black_alpha50">#7F000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    <drawable name="divider_color">#ffb6b6b6</drawable>
+    <drawable name="item_pressed">#ffd2d2d2</drawable>
+    <drawable name="divider_cloud_color">#ffacacac</drawable>
+    <drawable name="tongxingzheng_pressed">#ffdddddd</drawable>
+    <drawable name="container_add_color_normal">#ffe2e1dd</drawable>
+    <drawable name="container_add_color_pressed">#ffdbdad6</drawable>
+    <drawable name="gray_layer">#26000000</drawable>
+    <drawable name="help_bg">#fff1f2f4</drawable>
+</resources>

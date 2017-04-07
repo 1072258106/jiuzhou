@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- receivecardActivity ids start -->
+	<item type="id" name="receivecard_allview" />
+	<item type="id" name="receivecard_btn_switch" />
+	<item type="id" name="receivecard_btn_switch_label" />
+	<item type="id" name="receivecard_benren_label" />
+	<item type="id" name="receivecard_benren_display" />
+	<!-- receivecardActivity ids end -->
+
+	<!-- popupmenu ids start -->
+	<item type="id" name="popupmenu_create_contact" />
+	<item type="id" name="popupmenu_bulk_sms" />
+	<item type="id" name="popupmenu_setting" />
+	<!-- popupmenu ids end -->
+
+	<!-- Setting Activity -->
+	<item type="id" name="titlebar_complete" />
+	<item type="id" name="titlebar_like" />
+	<!-- Setting Activity -->
+
+	<!-- For tagging view -->
+    <item type="id" name="tag_number"/>
+    <item type="id" name="tag_protocol"/>
+    <item type="id" name="tag_position"/>
+
+
+    
+    <item type="id" name="auto_focus"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    
+</resources>

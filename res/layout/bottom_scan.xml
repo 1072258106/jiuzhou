@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_scan_code"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_scan_low_selector"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_scan_sn"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_scan_low_selector"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/bottom_left_text"
+            android:layout_width="140dp"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="扫描资产编号"
+            android:textColor="@color/white"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="扫描序列号"
+            android:textColor="@color/white"
+            android:textSize="13.0sp" />
+    </RelativeLayout>
+
+    <!--
+    <Button
+        android:id="@+id/btn_scan_code"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_scan_low_selector"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/bottom_scan_left"
+        android:layout_width="140dp"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="扫描资产编号"
+        android:textColor="@color/white"
+        android:textSize="13.0sp" />
+
+    <Button
+        android:id="@+id/btn_scan_sn"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_scan_low_selector"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="扫描序列号"
+        android:textColor="@color/white"
+        android:textSize="13.0sp" />
+    -->
+
+
+    <!--
+  <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp" >
+
+        <Button
+            android:id="@+id/btn_scan_code"
+            android:layout_width="123dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_scan_selector" />
+
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_scan_code"
+            android:layout_below="@id/btn_scan_code"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="扫描资产编号"
+            android:textColor="@color/gray"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp" >
+
+        <Button
+            android:id="@+id/btn_scan_sn"
+            android:layout_width="123dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_scan_selector"
+            android:duplicateParentState="true" />
+
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_scan_sn"
+            android:layout_below="@id/btn_scan_sn"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="扫描序列号"
+            android:textColor="@color/gray"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>
